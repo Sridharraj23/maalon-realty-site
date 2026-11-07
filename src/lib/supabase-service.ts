@@ -63,7 +63,7 @@ export async function getProperties(filter?: {
       }
 
       const { data, error } = await query;
-      if (!error && data && data.length > 0) {
+      if (!error && data) {
         // Map snake_case to camelCase if needed
         return data.map(mapDbToProperty);
       }
