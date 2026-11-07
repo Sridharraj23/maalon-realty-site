@@ -1,0 +1,723 @@
+{
+  "properties": [
+    {
+      "id": "MAG-101",
+      "title": "The Azure Haven – Coastal Luxury Villa",
+      "slug": "the-azure-haven-coastal-luxury-villa-ecr-chennai",
+      "category": "Villas",
+      "listingType": "Sale",
+      "status": "Available",
+      "price": 38500000,
+      "pricePerSqFt": 11000,
+      "area": 3500,
+      "areaUnit": "sq.ft",
+      "city": "Chennai",
+      "location": "ECR, Akkarai, Chennai",
+      "address": "East Coast Road, Akkarai, Chennai, Tamil Nadu 600119",
+      "bedrooms": 4,
+      "bathrooms": 5,
+      "parking": "2 Covered Cars",
+      "facing": "East Facing (Vaastu Compliant)",
+      "furnishing": "Semi-Furnished",
+      "possession": "Ready to Move",
+      "featured": true,
+      "verified": true,
+      "primaryImage": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Nestled in the prime serenity of Akkarai on the East Coast Road, The Azure Haven is a contemporary architectural villa crafted for high-lifestyle living. Featuring double-height living areas, private plunge pool, landscaped courtyard, Italian marble flooring, and panoramic terrace views toward the Bay of Bengal.",
+      "features": [
+        "Private Swimming Plunge Pool",
+        "Double Height Living Room",
+        "Landscaped Zen Garden",
+        "Private Lift Provision",
+        "100% Power Backup",
+        "Gated Community 24x7 Security"
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "ECR Beach Walk",
+          "distance": "400 meters"
+        },
+        {
+          "name": "Mayajaal Multiplex",
+          "distance": "3.5 km"
+        },
+        {
+          "name": "Apollo Speciality Hospital OMR",
+          "distance": "5.2 km"
+        }
+      ],
+      "reraId": "TN/RERA/00492/2025",
+      "createdAt": "2026-10-15T10:00:00Z",
+      "updatedAt": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "MAG-102",
+      "title": "The Skyline Sovereign – Sky Residence",
+      "slug": "the-skyline-sovereign-sky-residence-omr-chennai",
+      "category": "Apartments",
+      "listingType": "Sale",
+      "status": "Available",
+      "price": 16500000,
+      "pricePerSqFt": 7500,
+      "area": 2200,
+      "areaUnit": "sq.ft",
+      "city": "Chennai",
+      "location": "OMR, Perungudi, Chennai",
+      "address": "Old Mahabalipuram Road, Perungudi, Chennai, Tamil Nadu 600096",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parking": "2 Covered Slots",
+      "facing": "North-East",
+      "furnishing": "Unfurnished",
+      "possession": "Immediate (New Handover)",
+      "featured": true,
+      "verified": true,
+      "primaryImage": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1400&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Located directly on the prime IT highway of Perungudi, this expansive 3 BHK high-rise residence combines uninterrupted city skyline views with premium amenities.",
+      "features": [
+        "Infinity Rooftop Pool",
+        "State-of-the-art Gymnasium",
+        "Electric Vehicle Charging Bay",
+        "Multipurpose Banquet Hall"
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "TIDEL Park & Ascendas Tech Park",
+          "distance": "3.0 km"
+        },
+        {
+          "name": "Perungudi Metro Station",
+          "distance": "600 meters"
+        }
+      ],
+      "reraId": "TN/RERA/01128/2025",
+      "createdAt": "2026-10-20T11:30:00Z",
+      "updatedAt": "2026-10-20T11:30:00Z"
+    },
+    {
+      "id": "MAG-107",
+      "title": "Metro Heights – Modern 1 BHK Compact Apartment",
+      "slug": "metro-heights-modern-1-bhk-compact-apartment-porur-chennai",
+      "category": "Apartments",
+      "listingType": "Sale",
+      "status": "Available",
+      "price": 4200000,
+      "pricePerSqFt": 6460,
+      "area": 650,
+      "areaUnit": "sq.ft",
+      "city": "Chennai",
+      "location": "Porur, Chennai",
+      "address": "Near Mount Poonamallee Road, Porur, Chennai 600116",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": "1 Covered Bike + Shared Car Bay",
+      "facing": "North Facing",
+      "furnishing": "Semi-Furnished",
+      "possession": "Ready to Move",
+      "featured": true,
+      "verified": true,
+      "primaryImage": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Well-designed compact 1 BHK residence ideal for working executives and young couples in Porur. Close to DLF IT SEZ, L&T Infotech, and Ramachandra Hospital.",
+      "features": [
+        "Modular Kitchen Fitted",
+        "Lift with Automatic Rescue Device",
+        "CCTV Surveillance",
+        "Metrowater Connection"
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "DLF Cybercity Porur",
+          "distance": "1.8 km"
+        },
+        {
+          "name": "Sri Ramachandra Hospital",
+          "distance": "1.2 km"
+        }
+      ],
+      "reraId": "TN/RERA/0284/2025",
+      "createdAt": "2026-10-21T10:00:00Z",
+      "updatedAt": "2026-10-21T10:00:00Z"
+    },
+    {
+      "id": "MAG-103",
+      "title": "Heritage Manor – Independent Bungalow",
+      "slug": "heritage-manor-independent-bungalow-anna-nagar-chennai",
+      "category": "Independent Houses",
+      "listingType": "Sale",
+      "status": "Available",
+      "price": 65000000,
+      "pricePerSqFt": 14500,
+      "area": 4480,
+      "areaUnit": "sq.ft",
+      "city": "Chennai",
+      "location": "Anna Nagar West, Chennai",
+      "address": "6th Avenue, Anna Nagar West, Chennai, Tamil Nadu 600040",
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "parking": "3 Cars Inside Compound",
+      "facing": "North Facing",
+      "furnishing": "Fully Furnished",
+      "possession": "Ready to Move",
+      "featured": true,
+      "verified": true,
+      "primaryImage": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "A rare independent residential landmark in the tranquil grid of Anna Nagar West. Built on a full ground-and-a-half plot with CMDA clear title, complete private boundary, lush teakwood finishes, terrace entertainment lounge, and servant quarters.",
+      "features": [
+        "Independent Plot with Clear CMDA Title",
+        "Custom Teakwood Millwork",
+        "Private Terrace Gazebo",
+        "Separate Staff Quarters with Bath"
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "Anna Nagar Tower Park",
+          "distance": "1.2 km"
+        },
+        {
+          "name": "Thirumangalam Metro Station",
+          "distance": "800 meters"
+        }
+      ],
+      "reraId": "CMDA/REG/ANW/2024",
+      "createdAt": "2026-10-22T09:15:00Z",
+      "updatedAt": "2026-10-22T09:15:00Z"
+    },
+    {
+      "id": "MAG-104",
+      "title": "Emerald Meadows – DTCP Approved Villa Plots",
+      "slug": "emerald-meadows-dtcp-approved-villa-plots-gst-road-chennai",
+      "category": "Residential Plots",
+      "listingType": "Sale",
+      "status": "Available",
+      "price": 3600000,
+      "pricePerSqFt": 3000,
+      "area": 1200,
+      "areaUnit": "sq.ft",
+      "city": "Chennai",
+      "location": "GST Road, Guduvanchery, Chennai",
+      "address": "Near Mahindra World City, Guduvanchery, Tamil Nadu 603202",
+      "facing": "East & North Options",
+      "possession": "Immediate Registration",
+      "featured": false,
+      "verified": true,
+      "primaryImage": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Premium gated community villa layout with DTCP and RERA approvals off the booming GST Road corridor. Blacktop 40-feet avenue roads, underground drainage, and street lighting.",
+      "features": [
+        "DTCP & RERA Approved Layout",
+        "40-ft and 30-ft Wide Blacktop Roads",
+        "Underground Drainage & Water Lines",
+        "Avenue Tree Plantation"
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "Guduvanchery Railway Station",
+          "distance": "3.0 km"
+        },
+        {
+          "name": "SRM University & Hospital",
+          "distance": "5.0 km"
+        }
+      ],
+      "reraId": "TN/RERA/LAYOUT/0341/2025",
+      "createdAt": "2026-10-25T14:00:00Z",
+      "updatedAt": "2026-10-25T14:00:00Z"
+    },
+    {
+      "id": "MAG-105",
+      "title": "The Apex Pinnacle – Prime Commercial Floor",
+      "slug": "the-apex-pinnacle-prime-commercial-floor-coimbatore",
+      "category": "Commercial Properties",
+      "listingType": "Sale",
+      "status": "Available",
+      "price": 42000000,
+      "pricePerSqFt": 8400,
+      "area": 5000,
+      "areaUnit": "sq.ft",
+      "city": "Coimbatore",
+      "location": "Avinashi Road, Peelamedu, Coimbatore",
+      "address": "Avinashi Main Road, Peelamedu, Coimbatore, Tamil Nadu 641004",
+      "parking": "8 Reserved Basement Bays",
+      "furnishing": "Unfurnished",
+      "possession": "Immediate",
+      "featured": false,
+      "verified": true,
+      "primaryImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Grade-A commercial office space located on Coimbatore’s prime arterial Avinashi Road corridor. High visibility frontage, central HVAC provision, and double-glazed soundproof facade.",
+      "features": [
+        "Grade-A Building with LEED Gold Specifications",
+        "100% Full Power Backup with Dual DGs",
+        "Dedicated Reserved Basement Parking"
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "Coimbatore International Airport",
+          "distance": "4.2 km"
+        },
+        {
+          "name": "PSG College of Technology",
+          "distance": "1.2 km"
+        }
+      ],
+      "reraId": "TN/RERA/COMM/0198/2024",
+      "createdAt": "2026-10-28T16:20:00Z",
+      "updatedAt": "2026-10-28T16:20:00Z"
+    },
+    {
+      "id": "MAG-106",
+      "title": "Urban Oasis – Modern 1 BHK Smart Apartment for Sale",
+      "slug": "urban-oasis-modern-1-bhk-smart-apartment-for-sale-omr-chennai",
+      "category": "Apartments",
+      "listingType": "Sale",
+      "status": "Available",
+      "price": 3850000,
+      "pricePerSqFt": 6200,
+      "area": 620,
+      "areaUnit": "sq.ft",
+      "city": "Chennai",
+      "location": "OMR, Sholinganallur, Chennai",
+      "address": "Near ELCOT SEZ, Sholinganallur, Chennai, Tamil Nadu 600119",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": "1 Covered Stilt Parking",
+      "facing": "East Facing",
+      "furnishing": "Semi-Furnished",
+      "possession": "Ready to Move",
+      "featured": false,
+      "verified": true,
+      "primaryImage": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Compact, thoughtfully engineered 1 BHK apartment situated 5 minutes from ELCOT SEZ. High rental yield potential for tech professionals, CMDA approved, piped gas connection, gym, and automatic lift.",
+      "features": [
+        "CMDA Approved & Bank Loan Eligible",
+        "5 Minutes to ELCOT SEZ & Tech Parks",
+        "Covered Parking & Power Backup",
+        "High Rental Demand Corridor"
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "ELCOT SEZ Sholinganallur",
+          "distance": "1.2 km"
+        },
+        {
+          "name": "Akkarai Beach ECR Link",
+          "distance": "3.5 km"
+        }
+      ],
+      "reraId": "TN/RERA/APT/0442/2025",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "MAG-201",
+      "title": "The Bayview Panorama – Luxury 3 BHK for Rent",
+      "slug": "the-bayview-panorama-luxury-3-bhk-for-rent-ecr-chennai",
+      "category": "Apartments",
+      "listingType": "Rent",
+      "status": "Available",
+      "price": 75000,
+      "area": 2100,
+      "areaUnit": "sq.ft",
+      "city": "Chennai",
+      "location": "ECR, Palavakkam, Chennai",
+      "address": "East Coast Road, Palavakkam, Chennai 600041",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "parking": "2 Covered Car Parks",
+      "facing": "East Facing Ocean View",
+      "furnishing": "Fully Furnished",
+      "possession": "Immediate",
+      "featured": true,
+      "verified": true,
+      "primaryImage": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1502005229762-ee1b2b8ab98f?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Exquisite, high-end fully furnished 3 BHK sea-view apartment on East Coast Road. Designer interiors, VRF air conditioning, Italian kitchen, and clubhouse amenities. Ideal for senior corporate executives and expat families.",
+      "features": [
+        "100% Sea-Facing Balcony",
+        "Custom Italian Modular Kitchen",
+        "Clubhouse with Swimming Pool & Gym",
+        "24/7 Security & Concierge"
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "Palavakkam Beach",
+          "distance": "300 meters"
+        },
+        {
+          "name": "Adyar Circle",
+          "distance": "5.5 km"
+        }
+      ],
+      "createdAt": "2026-11-01T10:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "id": "MAG-202",
+      "title": "Zenith Studio – 1 BHK Furnished Executive Suite for Rent",
+      "slug": "zenith-studio-1-bhk-furnished-executive-suite-for-rent-omr-chennai",
+      "category": "Apartments",
+      "listingType": "Rent",
+      "status": "Available",
+      "price": 26000,
+      "area": 680,
+      "areaUnit": "sq.ft",
+      "city": "Chennai",
+      "location": "OMR, Thoraipakkam, Chennai",
+      "address": "Near Cognizant & BSR Mall, Thoraipakkam, Chennai 600097",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "parking": "1 Reserved Covered Parking",
+      "facing": "North Facing",
+      "furnishing": "Fully Furnished",
+      "possession": "Immediate",
+      "featured": false,
+      "verified": true,
+      "primaryImage": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1400&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Chic, fully equipped 1 BHK residence crafted for IT professionals working along the OMR tech corridor. Features high-speed fiber internet provision, smart LED TV, refrigerator, washing machine, and double bed with mattress.",
+      "features": [
+        "Fully Furnished with Appliances",
+        "High-Speed Wi-Fi Ready",
+        "Power Backup & Lift",
+        "Walkable to OMR Main Road"
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "BSR Mall & INOX",
+          "distance": "400 meters"
+        },
+        {
+          "name": "Cognizant Thoraipakkam",
+          "distance": "900 meters"
+        }
+      ],
+      "createdAt": "2026-11-02T11:00:00Z",
+      "updatedAt": "2026-11-02T11:00:00Z"
+    },
+    {
+      "id": "MAG-203",
+      "title": "Alwarpet Executive Enclave – Commercial Office for Lease",
+      "slug": "alwarpet-executive-enclave-commercial-office-for-lease-chennai",
+      "category": "Commercial Properties",
+      "listingType": "Rent",
+      "status": "Available",
+      "price": 180000,
+      "area": 2800,
+      "areaUnit": "sq.ft",
+      "city": "Chennai",
+      "location": "Alwarpet, TTK Road, Chennai",
+      "address": "TTK Road, Alwarpet, Chennai, Tamil Nadu 600018",
+      "parking": "4 Reserved Basement Cars",
+      "furnishing": "Semi-Furnished",
+      "possession": "Immediate",
+      "featured": false,
+      "verified": true,
+      "primaryImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Prime boutique commercial office space in central Alwarpet. Includes reception foyer, conference room, 3 executive cabins, and open workstation floor for 30 desks.",
+      "features": [
+        "100% DG Power Backup",
+        "Reserved Basement Car Parking",
+        "Central VRF Ducting",
+        "CCTV & Security"
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "TTK Road Junction",
+          "distance": "100 meters"
+        },
+        {
+          "name": "Nandanam Metro Station",
+          "distance": "1.5 km"
+        }
+      ],
+      "createdAt": "2026-11-03T14:00:00Z",
+      "updatedAt": "2026-11-03T14:00:00Z"
+    }
+  ],
+  "buyers": [
+    {
+      "id": "BUY-101",
+      "name": "Suresh Kumar",
+      "phone": "+91 94440 98765",
+      "email": "suresh.kumar@outlook.com",
+      "category": "Villas",
+      "preferredLocation": "ECR, Chennai",
+      "alternativeLocations": "OMR, Neelankarai",
+      "minBudget": 30000000,
+      "maxBudget": 45000000,
+      "requiredArea": "3000+ sq.ft",
+      "bedrooms": "4 BHK",
+      "bathrooms": "4+",
+      "purpose": "Self-use",
+      "timeline": "Immediate (Within 30 days)",
+      "fundingPreference": "Self-funded",
+      "preferences": "Gated community, sea-facing or walking distance to beach, Vaastu compliant",
+      "status": "Site Visit Scheduled",
+      "assignedTo": "Karthik Ramanathan",
+      "propertyId": "MAG-101",
+      "propertyName": "The Azure Haven – Coastal Luxury Villa",
+      "internalNotes": [
+        {
+          "id": "n-1",
+          "text": "Client is an NRI returning to Chennai. Spoke on phone, very serious buyer.",
+          "author": "Karthik Ramanathan",
+          "timestamp": "2026-11-05T14:28:44.334Z"
+        }
+      ],
+      "createdAt": "2026-11-03T14:28:44.335Z"
+    },
+    {
+      "id": "BUY-102",
+      "name": "Ananya Raghavan",
+      "phone": "+91 98841 55432",
+      "email": "ananya.r@gmail.com",
+      "category": "Apartments",
+      "preferredLocation": "OMR, Perungudi, Chennai",
+      "minBudget": 14000000,
+      "maxBudget": 18000000,
+      "requiredArea": "2000 sq.ft",
+      "bedrooms": "3 BHK",
+      "purpose": "Self-use",
+      "timeline": "1 to 3 Months",
+      "fundingPreference": "Home loan",
+      "status": "Contacted",
+      "assignedTo": "Sridhar M.",
+      "createdAt": "2026-11-01T14:28:44.335Z"
+    }
+  ],
+  "sellers": [
+    {
+      "posterType": "Dealer",
+      "listingType": "Rent",
+      "name": "Metro Real Estate Partner",
+      "phone": "+91 98401 23456",
+      "email": "dealer@metrorealty.in",
+      "preferredContact": "WhatsApp",
+      "propertyType": "Apartments",
+      "location": "OMR, Chennai",
+      "fullAddress": "Tower B, Sholinganallur",
+      "area": 1100,
+      "areaUnit": "sq.ft",
+      "expectedPrice": 32000,
+      "bedrooms": 2,
+      "description": "Furnished 2 BHK ready for immediate corporate tenant",
+      "ownershipStatus": "Sole Owner",
+      "documentAvailability": [],
+      "isListedElsewhere": "No",
+      "timeline": "Flexible",
+      "remarks": "",
+      "images": [],
+      "id": "SEL-202",
+      "status": "New",
+      "createdAt": "2026-11-05T14:30:09.848Z",
+      "internalNotes": []
+    },
+    {
+      "id": "SEL-201",
+      "posterType": "Owner",
+      "name": "Venkatesan G.",
+      "phone": "+91 98410 77665",
+      "email": "venkat.g@yahoo.com",
+      "preferredContact": "WhatsApp",
+      "propertyType": "Independent Houses",
+      "listingType": "Sale",
+      "location": "Anna Nagar West, Chennai",
+      "fullAddress": "Plot 18, 6th Avenue, Anna Nagar West, Chennai 600040",
+      "area": 4480,
+      "areaUnit": "sq.ft",
+      "expectedPrice": 65000000,
+      "bedrooms": 5,
+      "description": "Independent 5 BHK house on 1.5 ground with clear Patta and CMDA approval. Ready for immediate documentation.",
+      "ownershipStatus": "Sole Owner",
+      "documentAvailability": [
+        "Patta",
+        "Parent Document (30 Years)",
+        "CMDA Plan Approval",
+        "EC Up to Date"
+      ],
+      "isListedElsewhere": "No",
+      "timeline": "1-2 Months",
+      "status": "Approved",
+      "convertedToPropertyId": "MAG-103",
+      "assignedTo": "Arun Balaji",
+      "internalNotes": [
+        {
+          "id": "n-2",
+          "text": "Owner met in person. Documents verified. Listing onboarded as MAG-103.",
+          "author": "Arun Balaji",
+          "timestamp": "2026-11-05T14:28:44.335Z"
+        }
+      ],
+      "createdAt": "2026-10-29T14:28:44.335Z"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test-1",
+      "name": "Dr. Vigneshwaran S.",
+      "transactionType": "Buyer",
+      "propertyLocation": "Akkarai, ECR, Chennai",
+      "rating": 5,
+      "content": "Finding an authentic sea-side villa with verifiable legal documentation on ECR was daunting until we engaged Maalon Realty. The team understood our privacy requirements, coordinated every survey report, and never rushed our decision. True advisory at its finest.",
+      "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+      "approved": true,
+      "featured": true,
+      "createdAt": "2026-10-18T10:00:00Z"
+    },
+    {
+      "id": "test-2",
+      "name": "Meenakshi & Sundaram",
+      "transactionType": "Seller",
+      "propertyLocation": "Anna Nagar West, Chennai",
+      "rating": 5,
+      "content": "Selling our ancestral home of 35 years was deeply emotional. Maalon Realty represented our property with dignity, screened prospective buyers thoroughly, and closed the sale with a lovely family at our expected valuation. We are forever thankful.",
+      "photoUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80",
+      "approved": true,
+      "featured": true,
+      "createdAt": "2026-10-24T12:00:00Z"
+    },
+    {
+      "id": "test-3",
+      "name": "Rajesh K. Narayanan",
+      "transactionType": "Commercial Client",
+      "propertyLocation": "Peelamedu, Coimbatore",
+      "rating": 5,
+      "content": "Maalon Realty identified the ideal commercial floor plate for our regional software center in Coimbatore within two weeks. Their transparency during lease and purchase structure discussions saved us considerable negotiation time.",
+      "photoUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80",
+      "approved": true,
+      "featured": true,
+      "createdAt": "2026-10-29T15:30:00Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "CNT-301",
+      "name": "Premnath Iyer",
+      "phone": "+91 97910 22119",
+      "email": "premnath@techcorp.in",
+      "category": "Developer Partnership",
+      "message": "We have an upcoming luxury plotted layout near Guduvanchery and would like to explore a mandate partnership with Maalon Realty.",
+      "status": "New",
+      "createdAt": "2026-11-04T14:28:44.335Z"
+    }
+  ],
+  "settings": {
+    "companyName": "Maalon Realty",
+    "tagline": "Every Property Has a Purpose. Every Buyer Has a Place.",
+    "mission": "To connect property sellers with the right buyers and help people find properties where they can build their future.",
+    "phone": "+91 98400 12345",
+    "whatsapp": "+91 98400 12345",
+    "email": "connect@maalonrealty.in",
+    "address": "No. 42, TTK Road, Alwarpet, Chennai, Tamil Nadu 600018",
+    "workingHours": "Monday – Saturday: 9:30 AM – 6:30 PM (IST)",
+    "reraNumber": "TN/RERA/AGENT/CH/2026/0142 (Applied/Registration in process)",
+    "socials": {
+      "instagram": "https://instagram.com/maalonrealty",
+      "linkedin": "https://linkedin.com/company/maalonrealty",
+      "youtube": "https://youtube.com/@maalonrealty",
+      "facebook": "https://facebook.com/maalonrealty"
+    },
+    "announcement": {
+      "enabled": true,
+      "text": "Exclusive residential & commercial opportunities now open across Chennai & Coimbatore. Schedule your private advisory session today.",
+      "link": "/properties"
+    }
+  },
+  "founders": [
+    {
+      "id": "f-1",
+      "name": "Sridhar M.",
+      "designation": "Co-Founder & Managing Partner",
+      "role": "Strategic Growth & Developer Partnerships",
+      "bio": "Leads strategic partnerships, institutional real estate alliances, and high-value property advisory across Tamil Nadu.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+      "areasOfResponsibility": [
+        "Strategic Growth & Expansion",
+        "Developer & Channel Partner Alliances",
+        "High-Value Asset Advisory",
+        "Brand Governance"
+      ],
+      "email": "sridhar@maalonrealty.in",
+      "linkedin": "https://linkedin.com"
+    },
+    {
+      "id": "f-2",
+      "name": "Karthik Ramanathan",
+      "designation": "Co-Founder & Head of Client Advisory",
+      "role": "Buyer Representation & Property Matching",
+      "bio": "Dedicated to requirement-driven property discovery, guiding homebuyers and investors through informed, transparent decisions.",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "areasOfResponsibility": [
+        "Buyer Advisory & Discovery",
+        "Requirement-Based Matching",
+        "Site Visit Coordination",
+        "Customer Experience"
+      ],
+      "email": "karthik@maalonrealty.in",
+      "linkedin": "https://linkedin.com"
+    },
+    {
+      "id": "f-3",
+      "name": "Arun Balaji",
+      "designation": "Co-Founder & Operations Lead",
+      "role": "Seller Representation & Transaction Coordination",
+      "bio": "Oversees seller property listings, document verification workflows, and legal coordination through qualified legal counsels.",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80",
+      "areasOfResponsibility": [
+        "Seller Mandates & Property Onboarding",
+        "Information & Documentation Coordination",
+        "Valuation & Negotiation Support",
+        "Closing Coordination"
+      ],
+      "email": "arun@maalonrealty.in",
+      "linkedin": "https://linkedin.com"
+    }
+  ],
+  "siteVisits": [
+    {
+      "id": "sv-1",
+      "propertyId": "MAG-101",
+      "propertyName": "The Azure Haven – Coastal Luxury Villa",
+      "visitorName": "Suresh Kumar",
+      "phone": "+91 94440 98765",
+      "email": "suresh.kumar@outlook.com",
+      "preferredDate": "2026-11-08",
+      "preferredTime": "11:00 AM",
+      "status": "Scheduled",
+      "assignedTo": "Karthik Ramanathan",
+      "notes": "VIP visit, arrange keys and villa caretaker access.",
+      "createdAt": "2026-11-05T14:28:44.335Z"
+    }
+  ]
+}
