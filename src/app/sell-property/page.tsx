@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { PROPERTY_CATEGORIES, TAMIL_NADU_LOCATIONS } from '@/lib/constants';
 import { formatIndianCurrency } from '@/lib/utils';
+import { submitSellerEnquiry } from '@/lib/supabase-service';
 
 export default function SellPropertyPage() {
   const [formData, setFormData] = useState({
@@ -46,22 +47,33 @@ export default function SellPropertyPage() {
 
     setSubmitting(true);
     try {
-      const res = await fetch('/api/enquiries/sellers', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...formData,
-          area: Number(formData.area || 0),
-          expectedPrice: Number(formData.expectedPrice || 0),
-          bedrooms: formData.bedrooms ? Number(formData.bedrooms) : undefined,
-        }),
+      const res = await submitSellerEnquiry({
+        posterType: formData.posterType,
+        listingType: formData.listingType,
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        preferredContact: formData.preferredContact as any,
+        propertyType: formData.propertyType as any,
+        location: formData.location,
+        fullAddress: formData.fullAddress,
+        area: Number(formData.area || 0),
+        areaUnit: formData.areaUnit as any,
+        expectedPrice: Number(formData.expectedPrice || 0),
+        bedrooms: formData.bedrooms ? Number(formData.bedrooms) : undefined,
+        description: formData.description,
+        ownershipStatus: formData.ownershipStatus as any,
+        documentAvailability: [],
+        isListedElsewhere: 'No',
+        timeline: 'Flexible',
+        remarks: '',
+        images: [],
       });
 
-      const json = await res.json();
-      if (json.success) {
-        setSubmittedId(json.id || 'SEL-SUCCESS');
+      if (res.success) {
+        setSubmittedId(res.id || 'SEL-SUCCESS');
       } else {
-        alert(json.error || 'Failed to submit property.');
+        alert(res.error || 'Failed to submit property.');
       }
     } catch {
       alert('Network error, please try again.');

@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { getProperties } from '@/lib/store';
+import { getProperties } from '@/lib/supabase-service';
 import { BRAND } from '@/lib/constants';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

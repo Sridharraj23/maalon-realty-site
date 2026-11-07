@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Star, MessageSquarePlus, CheckCircle, MapPin, Quote } from 'lucide-react';
 import { Testimonial } from '@/lib/types';
 import { formatDate } from '@/lib/utils';
+import { submitTestimonial } from '@/lib/supabase-service';
 
 interface TestimonialCarouselProps {
   testimonials: Testimonial[];
@@ -35,16 +36,19 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
 
     setSubmitting(true);
     try {
-      const res = await fetch('/api/testimonials', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+      const res = await submitTestimonial({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        transactionType: formData.transactionType as any,
+        propertyLocation: formData.propertyLocation,
+        rating: formData.rating,
+        content: formData.content,
       });
-      const data = await res.json();
-      if (data.success) {
+      if (res.success) {
         setSubmitted(true);
       } else {
-        alert(data.error || 'Failed to submit review');
+        alert('Failed to submit review');
       }
     } catch {
       alert('Network error, please try again.');

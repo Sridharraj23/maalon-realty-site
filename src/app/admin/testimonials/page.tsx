@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { Testimonial } from '@/lib/types';
 import { formatDate } from '@/lib/utils';
+import { getTestimonials } from '@/lib/supabase-service';
 
 export default function AdminTestimonialsPage() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
@@ -39,11 +40,8 @@ export default function AdminTestimonialsPage() {
   const fetchTestimonials = async () => {
     try {
       setLoading(true);
-      const res = await fetch('/api/testimonials?all=true');
-      const json = await res.json();
-      if (json.success && Array.isArray(json.data)) {
-        setTestimonials(json.data);
-      }
+      const data = await getTestimonials(false);
+      setTestimonials(data);
     } catch (err) {
       console.error('Failed to load testimonials:', err);
     } finally {

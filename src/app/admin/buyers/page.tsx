@@ -18,6 +18,7 @@ import {
 import { BuyerEnquiry, LeadStatus, Property } from '@/lib/types';
 import { formatIndianCurrency, formatDate } from '@/lib/utils';
 import { DEFAULT_FOUNDERS } from '@/lib/constants';
+import { getBuyerEnquiries, getProperties } from '@/lib/supabase-service';
 
 export default function AdminBuyersPage() {
   const [buyers, setBuyers] = useState<BuyerEnquiry[]>([]);
@@ -42,18 +43,12 @@ export default function AdminBuyersPage() {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const [bRes, pRes] = await Promise.all([
-        fetch('/api/enquiries/buyers'),
-        fetch('/api/properties'),
+      const [bData, pData] = await Promise.all([
+        getBuyerEnquiries(),
+        getProperties(),
       ]);
-      const bJson = await bRes.json();
-      const pJson = await pRes.json();
-      if (bJson.success && Array.isArray(bJson.data)) {
-        setBuyers(bJson.data);
-      }
-      if (pJson.success && Array.isArray(pJson.data)) {
-        setProperties(pJson.data);
-      }
+      setBuyers(bData);
+      setProperties(pData);
     } catch (err) {
       console.error('Failed to load buyer leads:', err);
     } finally {

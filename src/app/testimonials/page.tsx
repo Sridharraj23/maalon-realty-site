@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Star, MessageSquarePlus, CheckCircle, MapPin, Quote, PlayCircle } from 'lucide-react';
 import { Testimonial } from '@/lib/types';
 import { formatDate } from '@/lib/utils';
+import { getTestimonials, submitTestimonial } from '@/lib/supabase-service';
 
 export default function TestimonialsPage() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
@@ -32,10 +33,9 @@ export default function TestimonialsPage() {
     async function fetchTestimonials() {
       try {
         setLoading(true);
-        const res = await fetch('/api/testimonials');
-        const json = await res.json();
-        if (json.success && Array.isArray(json.data)) {
-          setTestimonials(json.data);
+        const data = await getTestimonials(true);
+        if (Array.isArray(data)) {
+          setTestimonials(data);
         }
       } catch (err) {
         console.error('Failed to load testimonials:', err);
@@ -60,16 +60,21 @@ export default function TestimonialsPage() {
 
     setSubmitting(true);
     try {
-      const res = await fetch('/api/testimonials', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+      const res = await submitTestimonial({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        transactionType: formData.transactionType as any,
+        propertyLocation: formData.propertyLocation,
+        rating: formData.rating,
+        content: formData.content,
+        photoUrl: formData.photoUrl,
+        videoUrl: formData.videoUrl,
       });
-      const data = await res.json();
-      if (data.success) {
+      if (res.success) {
         setSubmitted(true);
       } else {
-        alert(data.error || 'Failed to submit review');
+        alert('Failed to submit review');
       }
     } catch {
       alert('Network error, please try again.');

@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { DEFAULT_SITE_SETTINGS } from '@/lib/constants';
 import { createWhatsAppUrl } from '@/lib/utils';
+import { submitContactSubmission } from '@/lib/supabase-service';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -37,16 +38,17 @@ export default function ContactPage() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      const res = await fetch('/api/enquiries/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+      const data = await submitContactSubmission({
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        subject: formData.category,
+        message: formData.message,
       });
-      const data = await res.json();
       if (data.success) {
         setSubmittedId(data.id || 'CNT-REGISTERED');
       } else {
-        alert(data.error || 'Failed to submit enquiry');
+        alert('Failed to submit enquiry');
       }
     } catch {
       alert('Network error, please try again.');

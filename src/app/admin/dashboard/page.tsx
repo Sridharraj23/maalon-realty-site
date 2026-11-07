@@ -13,27 +13,24 @@ import {
   MapPin,
 } from 'lucide-react';
 import {
-  getBuyers,
-  getContacts,
   getProperties,
-  getSellers,
-  getSiteVisits,
+  getBuyerEnquiries,
+  getSellerEnquiries,
   getTestimonials,
-} from '@/lib/store';
+} from '@/lib/supabase-service';
 import { formatIndianCurrency, formatDate } from '@/lib/utils';
 
-export const revalidate = 0;
-
 export default async function AdminDashboardPage() {
-  const [properties, buyers, sellers, testimonials, visits, contacts] =
+  const [properties, buyers, sellers, testimonials] =
     await Promise.all([
       getProperties(),
-      getBuyers(),
-      getSellers(),
+      getBuyerEnquiries(),
+      getSellerEnquiries(),
       getTestimonials(false), // All testimonials including pending
-      getSiteVisits(),
-      getContacts(),
     ]);
+
+  const visits: any[] = [];
+  const contacts: any[] = [];
 
   const activeProperties = properties.filter((p) => p.status === 'Available');
   const soldProperties = properties.filter((p) => p.status === 'Sold');

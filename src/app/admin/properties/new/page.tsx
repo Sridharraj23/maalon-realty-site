@@ -15,6 +15,7 @@ import {
 import { PropertyCategory, PropertyStatus } from '@/lib/types';
 import { PROPERTY_CATEGORIES, TAMIL_NADU_LOCATIONS } from '@/lib/constants';
 import { formatIndianCurrency, slugify } from '@/lib/utils';
+import { createProperty } from '@/lib/supabase-service';
 
 export default function AddPropertyPage() {
   const router = useRouter();
@@ -95,20 +96,9 @@ export default function AddPropertyPage() {
         features: featuresArray,
       };
 
-      const res = await fetch('/api/properties', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-
-      const json = await res.json();
-      if (json.success) {
-        alert('Property created and published successfully!');
-        router.push('/admin/properties');
-        router.refresh();
-      } else {
-        alert(json.error || 'Failed to create property');
-      }
+      await createProperty(payload);
+      alert('Property created and published successfully!');
+      router.push('/admin/properties');
     } catch {
       alert('Error creating property');
     } finally {

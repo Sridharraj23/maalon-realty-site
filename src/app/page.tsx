@@ -6,10 +6,7 @@ import WhatWeDoSection from '@/components/home/WhatWeDoSection';
 import HowMaalonWorks from '@/components/home/HowMaalonWorks';
 import TestimonialCarousel from '@/components/home/TestimonialCarousel';
 import FinalCtaSection from '@/components/home/FinalCtaSection';
-import { getProperties, getTestimonials } from '@/lib/store';
-
-// Revalidate every 60 seconds or on demand
-export const revalidate = 0;
+import { getProperties, getTestimonials } from '@/lib/supabase-service';
 
 export default async function HomePage() {
   const properties = await getProperties({ status: 'Available' });

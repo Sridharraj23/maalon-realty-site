@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { PROPERTY_CATEGORIES, TAMIL_NADU_LOCATIONS } from '@/lib/constants';
 import { formatIndianCurrency } from '@/lib/utils';
+import { submitBuyerEnquiry } from '@/lib/supabase-service';
 
 export default function FindPropertyPage() {
   const [formData, setFormData] = useState({
@@ -40,21 +41,29 @@ export default function FindPropertyPage() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      const res = await fetch('/api/enquiries/buyers', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...formData,
-          minBudget: Number(formData.minBudget || 0),
-          maxBudget: Number(formData.maxBudget || 0),
-        }),
+      const res = await submitBuyerEnquiry({
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        listingType: formData.listingType,
+        category: formData.category as any,
+        preferredLocation: formData.preferredLocation,
+        alternativeLocations: formData.alternativeLocations,
+        minBudget: Number(formData.minBudget || 0),
+        maxBudget: Number(formData.maxBudget || 0),
+        requiredArea: formData.requiredArea,
+        bedrooms: formData.bedrooms,
+        bathrooms: formData.bathrooms,
+        purpose: formData.purpose as any,
+        timeline: formData.timeline as any,
+        fundingPreference: formData.fundingPreference as any,
+        preferences: formData.preferences,
       });
 
-      const json = await res.json();
-      if (json.success) {
-        setSubmittedLeadId(json.id || 'BUY-REGISTERED');
+      if (res.success) {
+        setSubmittedLeadId(res.id || 'BUY-REGISTERED');
       } else {
-        alert(json.error || 'Failed to submit requirements.');
+        alert(res.error || 'Failed to submit requirements.');
       }
     } catch {
       alert('Network error, please try again.');

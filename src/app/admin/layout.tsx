@@ -34,14 +34,11 @@ export default function AdminLayout({
     return <>{children}</>;
   }
 
-  const handleLogout = async () => {
-    try {
-      await fetch('/api/admin/auth', { method: 'DELETE' });
-      router.push('/admin/login');
-      router.refresh();
-    } catch {
-      router.push('/admin/login');
+  const handleLogout = () => {
+    if (typeof window !== 'undefined') {
+      window.localStorage.removeItem('maalon_admin_session');
     }
+    router.push('/admin/login');
   };
 
   const navItems = [

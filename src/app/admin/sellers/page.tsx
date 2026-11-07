@@ -19,6 +19,7 @@ import {
 import { SellerEnquiry, SellerStatus } from '@/lib/types';
 import { formatIndianCurrency, formatDate } from '@/lib/utils';
 import { DEFAULT_FOUNDERS } from '@/lib/constants';
+import { getSellerEnquiries } from '@/lib/supabase-service';
 
 export default function AdminSellersPage() {
   const router = useRouter();
@@ -41,11 +42,8 @@ export default function AdminSellersPage() {
   const fetchSellers = async () => {
     try {
       setLoading(true);
-      const res = await fetch('/api/enquiries/sellers');
-      const json = await res.json();
-      if (json.success && Array.isArray(json.data)) {
-        setSellers(json.data);
-      }
+      const data = await getSellerEnquiries();
+      setSellers(data);
     } catch (err) {
       console.error('Failed to load seller submissions:', err);
     } finally {

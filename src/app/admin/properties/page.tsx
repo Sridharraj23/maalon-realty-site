@@ -17,6 +17,7 @@ import {
 import { Property, PropertyCategory, PropertyStatus } from '@/lib/types';
 import { formatIndianCurrency, formatArea } from '@/lib/utils';
 import { PROPERTY_CATEGORIES } from '@/lib/constants';
+import { getProperties, deleteProperty, updateProperty } from '@/lib/supabase-service';
 
 export default function AdminPropertiesListPage() {
   const [properties, setProperties] = useState<Property[]>([]);
@@ -28,10 +29,9 @@ export default function AdminPropertiesListPage() {
   const fetchProperties = async () => {
     try {
       setLoading(true);
-      const res = await fetch('/api/properties');
-      const json = await res.json();
-      if (json.success && Array.isArray(json.data)) {
-        setProperties(json.data);
+      const data = await getProperties();
+      if (Array.isArray(data)) {
+        setProperties(data);
       }
     } catch (err) {
       console.error('Failed to fetch properties:', err);
@@ -50,13 +50,8 @@ export default function AdminPropertiesListPage() {
     }
 
     try {
-      const res = await fetch(`/api/properties/${id}`, { method: 'DELETE' });
-      const json = await res.json();
-      if (json.success) {
-        setProperties((prev) => prev.filter((p) => p.id !== id));
-      } else {
-        alert(json.error || 'Failed to delete property');
-      }
+      await deleteProperty(id);
+      setProperties((prev) => prev.filter((p) => p.id !== id));
     } catch {
       alert('Error deleting property');
     }
@@ -64,17 +59,10 @@ export default function AdminPropertiesListPage() {
 
   const handleToggleStatus = async (prop: Property, newStatus: PropertyStatus) => {
     try {
-      const res = await fetch(`/api/properties/${prop.id}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ status: newStatus }),
-      });
-      const json = await res.json();
-      if (json.success) {
-        setProperties((prev) =>
-          prev.map((p) => (p.id === prop.id ? { ...p, status: newStatus } : p))
-        );
-      }
+      await updateProperty(prop.id, { status: newStatus });
+      setProperties((prev) =>
+        prev.map((p) => (p.id === prop.id ? { ...p, status: newStatus } : p))
+      );
     } catch {
       alert('Failed to update status');
     }
@@ -83,17 +71,10 @@ export default function AdminPropertiesListPage() {
   const handleToggleFeatured = async (prop: Property) => {
     try {
       const nextFeatured = !prop.featured;
-      const res = await fetch(`/api/properties/${prop.id}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ featured: nextFeatured }),
-      });
-      const json = await res.json();
-      if (json.success) {
-        setProperties((prev) =>
-          prev.map((p) => (p.id === prop.id ? { ...p, featured: nextFeatured } : p))
-        );
-      }
+      await updateProperty(prop.id, { featured: nextFeatured });
+      setProperties((prev) =>
+        prev.map((p) => (p.id === prop.id ? { ...p, featured: nextFeatured } : p))
+      );
     } catch {
       alert('Failed to toggle featured status');
     }

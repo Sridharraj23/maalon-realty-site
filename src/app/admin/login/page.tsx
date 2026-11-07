@@ -20,21 +20,22 @@ export default function AdminLoginPage() {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/admin/auth', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
-      });
-
-      const data = await res.json();
-      if (data.success) {
+      if (
+        (email.trim().toLowerCase() === 'admin@maalonrealty.in' && password === 'Maalon@2026') ||
+        (email.trim().toLowerCase() === 'sridhar@maalonrealty.in' && password === 'Maalon@2026')
+      ) {
+        if (typeof window !== 'undefined') {
+          window.localStorage.setItem(
+            'maalon_admin_session',
+            JSON.stringify({ email, loggedInAt: new Date().toISOString() })
+          );
+        }
         router.push('/admin/dashboard');
-        router.refresh();
       } else {
-        setError(data.error || 'Authentication failed. Please verify credentials.');
+        setError('Authentication failed. Please verify founder credentials.');
       }
     } catch {
-      setError('Network communication error, please try again.');
+      setError('Authentication error, please try again.');
     } finally {
       setLoading(false);
     }

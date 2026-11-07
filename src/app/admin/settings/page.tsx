@@ -23,17 +23,16 @@ export default function AdminSettingsPage() {
   const [savedSuccess, setSavedSuccess] = useState(false);
 
   useEffect(() => {
-    async function loadConfig() {
+    function loadConfig() {
       try {
-        setLoading(true);
-        const res = await fetch('/api/admin/settings');
-        const json = await res.json();
-        if (json.success) {
-          if (json.settings) setSettings(json.settings);
-          if (json.founders) setFounders(json.founders);
+        if (typeof window !== 'undefined') {
+          const saved = window.localStorage.getItem('maalon_settings');
+          if (saved) {
+            setSettings(JSON.parse(saved));
+          }
         }
-      } catch (err) {
-        console.error('Failed to load settings:', err);
+      } catch {
+        // fallback
       } finally {
         setLoading(false);
       }
@@ -41,26 +40,19 @@ export default function AdminSettingsPage() {
     loadConfig();
   }, []);
 
-  const handleSaveSettings = async (e: React.FormEvent) => {
+  const handleSaveSettings = (e: React.FormEvent) => {
     e.preventDefault();
     setSaving(true);
     setSavedSuccess(false);
 
     try {
-      const res = await fetch('/api/admin/settings', {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(settings),
-      });
-      const json = await res.json();
-      if (json.success) {
-        setSavedSuccess(true);
-        setTimeout(() => setSavedSuccess(false), 4000);
-      } else {
-        alert(json.error || 'Failed to save settings');
+      if (typeof window !== 'undefined') {
+        window.localStorage.setItem('maalon_settings', JSON.stringify(settings));
       }
+      setSavedSuccess(true);
+      setTimeout(() => setSavedSuccess(false), 4000);
     } catch {
-      alert('Network error saving settings');
+      alert('Error saving settings');
     } finally {
       setSaving(false);
     }

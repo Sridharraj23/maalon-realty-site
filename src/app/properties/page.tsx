@@ -13,6 +13,7 @@ import {
 import { Property, PropertyCategory, PropertyStatus } from '@/lib/types';
 import { PROPERTY_CATEGORIES, TAMIL_NADU_LOCATIONS } from '@/lib/constants';
 import PropertyCard from '@/components/properties/PropertyCard';
+import { getProperties } from '@/lib/supabase-service';
 
 function PropertiesContent() {
   const searchParams = useSearchParams();
@@ -49,10 +50,9 @@ function PropertiesContent() {
     async function loadProperties() {
       try {
         setLoading(true);
-        const res = await fetch('/api/properties');
-        const json = await res.json();
-        if (json.success && Array.isArray(json.data)) {
-          setProperties(json.data);
+        const data = await getProperties();
+        if (Array.isArray(data)) {
+          setProperties(data);
         }
       } catch (err) {
         console.error('Failed to fetch properties:', err);
